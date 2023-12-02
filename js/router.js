@@ -3,7 +3,7 @@ $(document).ready(function () {
   const navbar = $('nav');
 
   // Initial content to display when the SPA loads
-  loadContent(location.hash.substr(1));
+  loadContent(location.hash.substr(1)|| 'home');
 
   // Handle navigation links
   $('nav a').on('click', function (event) {
@@ -40,9 +40,6 @@ $(document).ready(function () {
     // Load content based on the path
     loadContent(path);
 
-    // Highlight the active navigation link
-    $('nav a').removeClass('app-nav-btn-active');
-    $('nav a[href="#' + path + '"]').addClass('app-nav-btn-active');
   }
 
   // Example: handle back/forward buttons
