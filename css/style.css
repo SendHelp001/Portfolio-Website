@@ -135,6 +135,7 @@ nav ul li a:hover:after {
   border-radius: 8px 8px 0 0;
 }
 .social-links {
+  
   position: relative;
   top: 50%;
   left: 50%;
@@ -147,7 +148,7 @@ nav ul li a:hover:after {
 }
 
 .social-links ul {
-  margin-left: -35px;
+  justify-content: center;
   display: flex;
   list-style: none;
 }
