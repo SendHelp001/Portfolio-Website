@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-color: black;
 }
 
 a {
@@ -14,7 +15,6 @@ a {
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
   background-color: black;
 }
 
@@ -80,28 +80,56 @@ nav ul li a:hover:after {
   color: white;
 }
 
-.content {
-  position: absolute;
-  top: 20%;
-  left: 8%;
-}
+.home-content {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+  }
+  
+  .home-content h1 {
+    color: #ffffff;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+  }
+  
+  .home-content p {
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
 
-.content h1 {
-  color: #ffffff;
-  font-size: 75px;
-  font-weight: 900;
-  line-height: 90px;
-  text-transform: inherit;
-}
-
-
-.content p {
-  color: #ffffff;
-  margin-top: 25px;
-  margin-bottom: 30px;
-}
-
-
-.about-class h1{
+.about-container {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: justify; 
+    color: #ffffff;
+  }
+  
+  .about-container h1 {
+    font-size: 36px;
+    font-weight: 700;
     text-align: center;
-}
+  }
+  
+  .about-class-p {
+    margin-top: 20px;
+  }
+  
+  /* Image Card Container */
+  .image-card {
+    max-width: 400px; 
+    margin: 20px auto;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Image Styling */
+  .image-card img {
+    width: 100%; 
+    border-radius: 8px 8px 0 0; 
+  }

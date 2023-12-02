@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const contentContainer = $('.content');
+  const contentContainer = $('#content');
   const navbar = $('nav');
 
   // Initial content to display when the SPA loads
@@ -9,7 +9,7 @@ $(document).ready(function () {
   $('nav a').on('click', function (event) {
     event.preventDefault();
 
-    const target = $(this).attr('href').replace('.html', '').substr(1); // Remove the '.html' extension
+    const target = $(this).attr('href').substr(1); // Remove the '#' symbol
     navigateTo(target);
   });
 
