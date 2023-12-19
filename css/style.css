@@ -123,6 +123,50 @@ nav ul li a:hover:after {
   margin-top: 20px;
 }
 
+/*PROJECT CONTAINER*/
+.project-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify;
+  color: #ffffff;
+  margin-left: 10%;
+}
+
+.project-container h1 {
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.project-class-p {
+  margin-top: 20px;
+}
+/* PROJECT CARD */
+.project-card {
+  display: inline-block;
+  max-width: 300px;
+  margin: 20px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+/* PROJECT CARD IMG*/
+.project-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px 8px 0 0;
+}
+
+
 /* Image Card Container */
 .image-card {
   max-width: 400px;
@@ -143,8 +187,12 @@ nav ul li a:hover:after {
 }
 
 .card-content {
-  padding: 15px; /* Adjust the padding as needed */
+  max-height: 150px; /* Set the maximum height as needed */
+  overflow: hidden;
+  padding: 15px;
+  font-size: 10px;
 }
+
 
 .social-links {
   position: relative;
